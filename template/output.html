@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Function test results</title>
+        <style type="text/css">
+            table {
+                border: 1px solid black;
+                border-collapse: collapse
+            }
+            td, th {
+                border: 1px solid black;
+            }
+            tr.error {
+                color: red
+            }
+            tr.success {
+                color: green
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Total jmx files processed: {{testsCompleted}}</h1>
+        <table>
+            <tr>
+                <th>Метка запроса</th><th>Файл/запрос</th><th>Код ответа</th><th>Текст ошибки</th><th>Статус</th>
+            </tr>
+            {{data}}
+        </table> 
+    </body>
+</html>
